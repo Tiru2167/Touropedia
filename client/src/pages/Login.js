@@ -111,23 +111,7 @@ const Login = () => {
               </MDBBtn>
             </div>
           </MDBValidation>
-          <br />
-          <GoogleLogin
-            clientId="272020365092-esd8i1k06qc9jtn64nrr53jaq1nbi0fi.apps.googleusercontent.com"
-            render={(renderProps) => (
-              <MDBBtn
-                style={{ width: "100%" }}
-                color="danger"
-                onClick={renderProps.onClick}
-                disabled={renderProps.disabled}
-              >
-                <MDBIcon className="me-2" fab icon="google" /> Google Sign In
-              </MDBBtn>
-            )}
-            onSuccess={googleSuccess}
-            onFailure={googleFailure}
-            cookiePolicy="single_host_origin"
-          />
+          
         </MDBCardBody>
         <MDBCardFooter>
           <Link to="/register">
